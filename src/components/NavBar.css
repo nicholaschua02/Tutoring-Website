@@ -38,11 +38,11 @@
 }
 
 .navbar-menu li a:hover {
-    font-weight: bold;
+   
 }
 
 .navbar-menu li a.active {
-    font-weight: bold; /* Make the active link bold */
+    
 }
 
 .navbar-menu li a.active::before {
@@ -62,12 +62,12 @@
 }
 
 .navbar-buttons-right button:hover {
-    background-color: black;
+    background-color: rgb(128, 161, 172);
 }
 
 .navbar-buttons-right button {
-    background-color: rgb(71, 71, 71); /* Set button background color to black */
-    color: white; /* Set button text color to white */
+    background-color :lightblue; /* Set button background color to black */
+    color: White; /* Set button text color to white */
     border: none;
     cursor: pointer;
     font-size: 16px;
