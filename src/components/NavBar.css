@@ -1,0 +1,76 @@
+/* NavBar.css */
+
+.company-logo img {
+    width: 300px; /* Specify the desired width */
+    height: 100px; /* Specify the desired height */
+}
+
+nav {
+    background-color: white;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    display: flex;
+    justify-content: space-between; /* Distribute items along the main axis */
+    align-items: center; /* Center items along the cross axis */
+    padding: 20px;
+}
+
+.company-logo {
+    height: 50px;
+    margin-bottom: 10px; /* Add space below the image*/
+}
+
+.navbar-menu {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.navbar-menu li {
+    margin-right: 20px;
+}
+
+.navbar-menu li:last-child {
+    margin-right: 0;
+}
+
+.navbar-menu li a {
+    text-decoration: none;
+    color: #333;
+    transition: color 0.3s ease;
+}
+
+.navbar-menu li a:hover {
+    color: #008000;
+}
+
+.navbar-buttons-right {
+    position: absolute; /* Position the container absolutely */
+    top: 0; /* Position it at the top */
+    right: 0; /* Position it at the right */
+}
+
+.navbar-buttons-right button {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    padding: 10px 20px;
+    color: #333;
+    transition: color 0.3s ease;
+    margin-left: 10px; /* Add space between buttons */
+}
+
+.navbar-buttons-right button:first-child {
+    margin-left: 0; /* Remove margin from the first button */
+    margin-top: 10px;
+}
+
+.navbar-buttons-right button:hover {
+    color: #008000;
+}
+
+.navbar-left {
+    display: flex;
+    flex-direction: column; /* Arrange items in a column */
+}
