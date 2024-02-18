@@ -1,22 +1,20 @@
 /* NavBar.css */
 
-.company-logo img {
-    width: 300px; /* Specify the desired width */
-    height: 100px; /* Specify the desired height */
-}
-
-nav {
+.navbar {
     background-color: white;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     display: flex;
-    justify-content: space-between; /* Distribute items along the main axis */
-    align-items: center; /* Center items along the cross axis */
+    justify-content: space-between;
+    align-items: center;
     padding: 20px;
 }
+  
+.company-logo img {
+    height: 80px; /* Adjust the height of the logo */
+}
 
-.company-logo {
-    height: 50px;
-    margin-bottom: 10px; /* Add space below the image*/
+.navbar-left {
+    display: flex;
+    align-items: center;
 }
 
 .navbar-menu {
@@ -27,50 +25,57 @@ nav {
 }
 
 .navbar-menu li {
-    margin-right: 20px;
-}
-
-.navbar-menu li:last-child {
-    margin-right: 0;
+    text-align: center; /* Center align the text */
 }
 
 .navbar-menu li a {
     text-decoration: none;
     color: #333;
     transition: color 0.3s ease;
+    position: relative; /* Add positioning for the hover line */
+    display: block; /* Make the link fill the entire space */
+    padding: 30px; /* Add padding to make the "squares" */
 }
 
 .navbar-menu li a:hover {
-    color: #008000;
+    font-weight: bold;
+}
+
+.navbar-menu li a.active {
+    font-weight: bold; /* Make the active link bold */
+}
+
+.navbar-menu li a.active::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 50%; /* Align the line at the center */
+    transform: translateX(-50%); /* Center the line */
+    width: 100%;
+    height: 2px; /* Adjust the height of the hover line */
+    background-color: black; /* Change the color of the hover line */
 }
 
 .navbar-buttons-right {
-    position: absolute; /* Position the container absolutely */
-    top: 0; /* Position it at the top */
-    right: 0; /* Position it at the right */
+    display: flex;
+    align-items: center;
+}
+
+.navbar-buttons-right button:hover {
+    background-color: black;
 }
 
 .navbar-buttons-right button {
-    background-color: transparent;
+    background-color: rgb(71, 71, 71); /* Set button background color to black */
+    color: white; /* Set button text color to white */
     border: none;
     cursor: pointer;
     font-size: 16px;
     padding: 10px 20px;
-    color: #333;
-    transition: color 0.3s ease;
-    margin-left: 10px; /* Add space between buttons */
+    margin-left: 10px;
+    border-radius: 20px;
 }
 
 .navbar-buttons-right button:first-child {
-    margin-left: 0; /* Remove margin from the first button */
-    margin-top: 10px;
-}
-
-.navbar-buttons-right button:hover {
-    color: #008000;
-}
-
-.navbar-left {
-    display: flex;
-    flex-direction: column; /* Arrange items in a column */
+    margin-left: 0;
 }

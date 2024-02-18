@@ -7,7 +7,7 @@ export default function MainPage() {
 
     return(
         <div className="mainpage-container">
-            <NavBar />
+            <NavBar activePage={"home"}/>
             <div className="mainpage-maintext">
                 <h1>HOME</h1>
             </div>

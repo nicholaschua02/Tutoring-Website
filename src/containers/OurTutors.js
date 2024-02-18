@@ -7,7 +7,7 @@ export default function OurTutors() {
 
     return(
         <div className="ourtutors-container">
-            <NavBar />
+            <NavBar activePage={"tutors"}/>
             <div className="ourtutors-maintext">
                 <h1>OUR TUTORS</h1>
             </div>

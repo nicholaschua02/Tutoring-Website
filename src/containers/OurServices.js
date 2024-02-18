@@ -7,7 +7,7 @@ export default function OurServices() {
 
     return(
         <div className="ourservices-container">
-            <NavBar />
+            <NavBar activePage={"services"}/>
             <div className="ourservices-maintext">
                 <h1>OUR SERVICES</h1>
             </div>

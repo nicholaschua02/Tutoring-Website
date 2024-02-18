@@ -7,7 +7,7 @@ export default function BecomeAClient() {
 
     return(
         <div className="becomeaclient-container">
-            <NavBar />
+            <NavBar activePage={"become-client"}/>
             <div className="becomeaclient-maintext">
                 <h1>BECOME A CLIENT</h1>
             </div>
